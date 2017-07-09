@@ -1,7 +1,7 @@
 <h1 align="center">Cheddar</h1>
 <h6 align="center">
   <a href="https://en.wikipedia.org/wiki/Chaumes">
-    <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Chaumes.jpg/800px-Chaumes.jpg"
+    <img  src="https://upload.wikimedia.org/wikipedia/commons/1/18/Somerset-Cheddar.jpg"
         height="64"
         width="64">
   </a>
