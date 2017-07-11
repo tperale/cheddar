@@ -1,4 +1,4 @@
-update=Sun 09 Jul 2017 02:52:08 PM CEST
+update=Tue 11 Jul 2017 11:34:33 PM CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -60,14 +70,4 @@ LibName28=contrib
 LibName29=valves
 LibName30=/home/tperale/kicad/libraries/kicad-ESP8266/ESP8266
 LibName31=switches
-LibName32=schematics/ch340g
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName32=components/ch340g
