@@ -155,7 +155,7 @@ U 1 1 59612B6E
 P 3550 2250
 F 0 "Y1" H 3550 2400 50  0000 C CNN
 F 1 "12Mhz" H 3550 2100 50  0000 C CNN
-F 2 "Crystals:Crystal_HC49-U_Vertical" H 3550 2250 50  0001 C CNN
+F 2 "Crystals:Crystal_SMD_2012-2pin_2.0x1.2mm_HandSoldering" H 3550 2250 50  0001 C CNN
 F 3 "" H 3550 2250 50  0001 C CNN
 	1    3550 2250
 	1    0    0    -1  
