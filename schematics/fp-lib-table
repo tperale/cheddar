@@ -1,7 +1,7 @@
 (fp_lib_table
-  (lib (name ESP8266)(type KiCad)(uri "$(KIPRJMOD)/libs/ESP8266.pretty")(options "")(descr ""))
   (lib (name capacitor)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/capacitor.pretty")(options "")(descr ""))
   (lib (name dip)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/dip.pretty")(options "")(descr ""))
+  (lib (name ESP8266)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/ESP8266.pretty")(options "")(descr ""))
   (lib (name jumper)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/jumper.pretty")(options "")(descr ""))
   (lib (name led)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/led.pretty")(options "")(descr ""))
   (lib (name pad)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/pad.pretty")(options "")(descr ""))
