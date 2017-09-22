@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:dash-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,7 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:switches
-LIBS:ch340g
+LIBS:ESP8266
 LIBS:dash-cache
 EELAYER 25 0
 EELAYER END
@@ -46,17 +45,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L ESP-12E U1
-U 1 1 5946DC8B
-P 6650 4650
-F 0 "U1" H 6650 4550 50  0000 C CNN
-F 1 "ESP-12E" H 6650 4750 50  0000 C CNN
-F 2 "ESP8266:ESP-12E_SMD" H 6650 4650 50  0001 C CNN
-F 3 "" H 6650 4650 50  0001 C CNN
-	1    6650 4650
-	1    0    0    -1  
-$EndComp
 NoConn ~ 6400 5550
 NoConn ~ 6500 5550
 NoConn ~ 6600 5550
@@ -748,7 +736,6 @@ Wire Wire Line
 Wire Wire Line
 	5350 4650 5750 4650
 NoConn ~ 7450 2000
-NoConn ~ 6900 2050
 Wire Wire Line
 	7450 2200 7500 2200
 Wire Wire Line
@@ -811,4 +798,17 @@ Wire Wire Line
 	8200 2400 10250 2400
 Wire Wire Line
 	9900 1900 10250 1900
+Entry Wire Line
+	2050 1650 2150 1750
+$Comp
+L ESP-12E U1
+U 1 1 59C589B5
+P 6650 4650
+F 0 "U1" H 6650 4550 50  0000 C CNN
+F 1 "ESP-12E" H 6650 4750 50  0000 C CNN
+F 2 "" H 6650 4650 50  0001 C CNN
+F 3 "" H 6650 4650 50  0001 C CNN
+	1    6650 4650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
