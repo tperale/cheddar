@@ -23,7 +23,7 @@
     (36 B.SilkS user)
     (37 F.SilkS user)
     (38 B.Mask user)
-    (39 F.Mask user hide)
+    (39 F.Mask user)
     (40 Dwgs.User user)
     (41 Cmts.User user)
     (42 Eco1.User user)
@@ -63,7 +63,7 @@
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
     (grid_origin 142.367 102.362)
-    (visible_elements FFFFFB7F)
+    (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x00030_80000001)
       (usegerberextensions false)
