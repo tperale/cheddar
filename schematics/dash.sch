@@ -74,7 +74,7 @@ F 3 "" H 8450 2150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Label 5350 4650 0    60   ~ 0
-WAKE
+GPIO16
 $Comp
 L CONN_01X02 J2
 U 1 1 59610601
@@ -110,9 +110,9 @@ F 3 "" H 3950 1650 60  0001 C CNN
 $EndComp
 NoConn ~ 1600 2150
 NoConn ~ 1200 2350
-Text Label 7850 4350 2    60   ~ 0
+Text Label 7900 4350 2    60   ~ 0
 TXD
-Text Label 7850 4450 2    60   ~ 0
+Text Label 7900 4450 2    60   ~ 0
 RXD
 Text Label 3350 1550 0    60   ~ 0
 RXD
@@ -332,7 +332,7 @@ U 1 1 5961EC21
 P 9400 1900
 F 0 "U4" H 9400 2000 60  0000 C CNN
 F 1 "HT7333" H 9400 2100 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT89-3_Housing_Handsoldering" H 9400 1900 60  0001 C CNN
+F 2 "sot:SOT89" H 9400 1900 60  0001 C CNN
 F 3 "" H 9400 1900 60  0001 C CNN
 	1    9400 1900
 	1    0    0    -1  
@@ -391,14 +391,8 @@ Text Label 4950 1750 2    60   ~ 0
 GPIO0
 Text Label 7900 4750 2    60   ~ 0
 GPIO0
-Text Label 5450 3850 3    60   ~ 0
-WAKE
-NoConn ~ 7550 4550
-NoConn ~ 7550 4650
-NoConn ~ 5750 4750
-NoConn ~ 5750 4850
-NoConn ~ 5750 4950
-NoConn ~ 5750 4450
+Text Label 5550 3850 3    60   ~ 0
+GPIO16
 NoConn ~ 7450 2100
 $Comp
 L GND #PWR01
@@ -568,7 +562,7 @@ $EndComp
 Wire Wire Line
 	5500 1900 6450 1900
 Wire Wire Line
-	5750 5050 5350 5050
+	5350 5050 5750 5050
 Wire Wire Line
 	1600 1750 2600 1750
 Wire Wire Line
@@ -586,9 +580,9 @@ Wire Wire Line
 Connection ~ 5200 4350
 Wire Wire Line
 	5200 3950 5200 4350
-Connection ~ 5450 4350
+Connection ~ 5550 4350
 Wire Wire Line
-	5450 4350 5450 3850
+	5550 4350 5550 3850
 Wire Wire Line
 	5700 4350 5700 4200
 Connection ~ 4700 4350
@@ -636,7 +630,7 @@ Wire Wire Line
 	9400 2400 9400 2250
 Connection ~ 8800 1900
 Wire Wire Line
-	8800 2250 8800 2400
+	8800 2400 8800 2250
 Wire Wire Line
 	8800 1900 8800 2050
 Wire Wire Line
@@ -685,7 +679,7 @@ Wire Wire Line
 	3150 1750 3700 1750
 Connection ~ 3700 2750
 Wire Wire Line
-	3700 2650 3700 2750
+	3700 2750 3700 2650
 Wire Wire Line
 	3150 2750 4350 2750
 Wire Wire Line
@@ -717,9 +711,9 @@ Wire Wire Line
 	3350 1450 3700 1450
 Connection ~ 8650 2400
 Wire Wire Line
-	7550 4450 7850 4450
+	7550 4450 7900 4450
 Wire Wire Line
-	7550 4350 7850 4350
+	7550 4350 7900 4350
 Wire Wire Line
 	4500 4350 4750 4350
 Wire Wire Line
@@ -811,4 +805,121 @@ F 3 "" H 8800 2150 50  0001 C CNN
 	1    8800 2150
 	1    0    0    -1  
 $EndComp
+$Comp
+L Conn_01x08 J5
+U 1 1 59CC2428
+P 3850 6450
+F 0 "J5" H 3850 6850 50  0000 C CNN
+F 1 "Conn_01x08" H 3850 5950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3850 6450 50  0001 C CNN
+F 3 "" H 3850 6450 50  0001 C CNN
+	1    3850 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x08 J4
+U 1 1 59CC25B5
+P 2600 6450
+F 0 "J4" H 2600 6850 50  0000 C CNN
+F 1 "Conn_01x08" H 2600 5950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 2600 6450 50  0001 C CNN
+F 3 "" H 2600 6450 50  0001 C CNN
+	1    2600 6450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 6250 2200 6000
+Wire Wire Line
+	2300 6250 2300 6000
+Wire Wire Line
+	2400 6250 2400 6000
+Wire Wire Line
+	2500 6250 2500 6000
+Wire Wire Line
+	2600 6250 2600 6000
+Wire Wire Line
+	2700 6250 2700 6000
+Wire Wire Line
+	2800 6250 2800 6000
+Wire Wire Line
+	2900 6250 2900 6000
+Wire Wire Line
+	3450 6250 3450 6000
+Wire Wire Line
+	3550 6250 3550 6000
+Wire Wire Line
+	3650 6250 3650 6000
+Wire Wire Line
+	3750 6250 3750 6000
+Wire Wire Line
+	3850 6250 3850 6000
+Wire Wire Line
+	3950 6250 3950 6000
+Wire Wire Line
+	4050 6250 4050 6000
+Wire Wire Line
+	4150 6250 4150 6000
+Text Label 2200 6000 1    60   ~ 0
+REST
+Text Label 2300 6000 1    60   ~ 0
+ADC
+Text Label 2400 6000 1    60   ~ 0
+CH_PD
+Text Label 2500 6000 1    60   ~ 0
+GPIO16
+Text Label 2600 6000 1    60   ~ 0
+GPIO14
+Text Label 2700 6000 1    60   ~ 0
+GPIO12
+Text Label 2800 6000 1    60   ~ 0
+GPIO13
+Text Label 2900 6000 1    60   ~ 0
+VCC
+Text Label 4150 6000 1    60   ~ 0
+TXD
+Text Label 4050 6000 1    60   ~ 0
+RXD
+Text Label 3950 6000 1    60   ~ 0
+GPIO5
+Text Label 3850 6000 1    60   ~ 0
+GPIO4
+Text Label 3750 6000 1    60   ~ 0
+GPIO0
+Text Label 3650 6000 1    60   ~ 0
+GPIO2
+Text Label 3550 6000 1    60   ~ 0
+GPIO15
+Text Label 3450 6000 1    60   ~ 0
+GND
+Wire Wire Line
+	7550 4650 7900 4650
+Wire Wire Line
+	7550 4550 7900 4550
+Wire Wire Line
+	5350 4450 5750 4450
+Wire Wire Line
+	5750 4750 5350 4750
+Wire Wire Line
+	5750 4850 5350 4850
+Wire Wire Line
+	5750 4950 5350 4950
+Text Label 5350 4450 0    60   ~ 0
+ADC
+Text Label 5350 4750 0    60   ~ 0
+GPIO14
+Text Label 5350 4850 0    60   ~ 0
+GPIO12
+Text Label 5350 4950 0    60   ~ 0
+GPIO13
+Text Label 7900 4550 2    60   ~ 0
+GPIO5
+Text Label 7900 4650 2    60   ~ 0
+GPIO4
+Wire Wire Line
+	5350 4350 5350 3850
+Connection ~ 5350 4350
+Text Label 5350 3850 3    60   ~ 0
+REST
+Text Label 5350 5050 0    60   ~ 0
+VCC
 $EndSCHEMATC
