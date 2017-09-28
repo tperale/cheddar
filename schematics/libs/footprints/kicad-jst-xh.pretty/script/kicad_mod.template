@@ -1,0 +1,37 @@
+(module {{name}} (layer F.Cu) (tedit 56902445)
+  (descr "JST XH series connector, {{name}}")
+  (tags "connector jst xh")
+  (fp_text reference REF** (at 4.5 4.5) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value {{name}} (at {{outline.left + width/2}} -3.4) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_line (start {{outline.left }} {{outline.top   }}) (end {{outline.right}} {{outline.top   }}) (layer F.SilkS) (width 0.15))
+  (fp_line (start {{outline.left }} {{outline.bottom}}) (end {{outline.right}} {{outline.bottom}}) (layer F.SilkS) (width 0.15))
+  (fp_line (start {{outline.left }} {{outline.top   }}) (end {{outline.left }} {{outline.bottom}}) (layer F.SilkS) (width 0.15))
+  (fp_line (start {{outline.right}} {{outline.top   }}) (end {{outline.right}} {{outline.bottom}}) (layer F.SilkS) (width 0.15))
+
+  (fp_line (start {{crt.left }} {{crt.top   }}) (end {{crt.right}} {{crt.top   }}) (layer F.CrtYd) (width 0.05))
+  (fp_line (start {{crt.left }} {{crt.bottom}}) (end {{crt.right}} {{crt.bottom}}) (layer F.CrtYd) (width 0.05))
+  (fp_line (start {{crt.left }} {{crt.top   }}) (end {{crt.left }} {{crt.bottom}}) (layer F.CrtYd) (width 0.05))
+  (fp_line (start {{crt.right}} {{crt.top   }}) (end {{crt.right}} {{crt.bottom}}) (layer F.CrtYd) (width 0.05))
+
+  (fp_line (start -0.5 4.5) (end 0.5 4.5) (layer F.SilkS) (width 0.15))
+  (fp_line (start 0 4) (end +0.5 4.5) (layer F.SilkS) (width 0.15))
+  (fp_line (start 0 4) (end -0.5 4.5) (layer F.SilkS) (width 0.15))
+
+  (pad 1 thru_hole rect (at 0 0) (size 1.5 1.5) (drill 0.9) (layers *.Cu *.Mask F.SilkS))
+{%- for i in range(1, pins) %}
+  (pad {{i+1}} thru_hole circle (at {{raster_width*i}} 0) (size 1.5 1.5) (drill {{drill}}) (layers *.Cu *.Mask F.SilkS))
+{%- endfor %}
+
+  (model ./kicad-jst-xh.3dshapes/{{name}}.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 0.3937007874 0.3937007874 0.3937007874))
+    (rotate (xyz 0 0 0))
+  )
+
+)
+

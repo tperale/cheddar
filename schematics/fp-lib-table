@@ -10,4 +10,6 @@
   (lib (name soic)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/soic.pretty")(options "")(descr ""))
   (lib (name sop)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/sop.pretty")(options "")(descr ""))
   (lib (name sot)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/sot.pretty")(options "")(descr ""))
+  (lib (name Buttons_Switches_THT)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/Buttons_Switches_THT.pretty")(options "")(descr ""))
+  (lib (name kicad-jst-xh)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/kicad-jst-xh.pretty")(options "")(descr ""))
 )

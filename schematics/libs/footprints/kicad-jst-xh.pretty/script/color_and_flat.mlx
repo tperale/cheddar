@@ -1,0 +1,32 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+
+    <filter name="Change the current layer">
+        <Param type="RichMesh" value="1" name="mesh"/>
+    </filter>
+    <filter name="Select All"/>
+    <filter name="Vertex Color Filling">
+        <Param type="RichDynamicFloat" value="255" min="0" name="r" max="255"/>
+        <Param type="RichDynamicFloat" value="255" min="0" name="g" max="255"/>
+        <Param type="RichDynamicFloat" value="255" min="0" name="b" max="255"/>
+    </filter>
+
+    <filter name="Select None"/>
+    <filter name="Change the current layer">
+        <Param type="RichMesh" value="0" name="mesh"/>
+    </filter>
+    <filter name="Select All"/>
+    <filter name="Vertex Color Filling">
+        <Param type="RichDynamicFloat" value="128" min="0" name="r" max="255"/>
+        <Param type="RichDynamicFloat" value="128" min="0" name="g" max="255"/>
+        <Param type="RichDynamicFloat" value="128" min="0" name="b" max="255"/>
+    </filter>
+
+    <filter name="Select None"/>
+    <filter name="Flatten Visible Layers">
+        <Param type="RichBool" value="true" name="MergeVisible"/>
+        <Param type="RichBool" value="true" name="DeleteLayer"/>
+        <Param type="RichBool" value="false" name="MergeVertices"/>
+        <Param type="RichBool" value="false" name="AlsoUnreferenced"/>
+    </filter>
+</FilterScript>
