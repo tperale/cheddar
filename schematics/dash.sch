@@ -68,7 +68,7 @@ U 1 1 5960ECBD
 P 8450 2150
 F 0 "J1" H 8450 2300 50  0000 C CNN
 F 1 "BATT_CONN" V 8550 2150 50  0000 C TNN
-F 2 "Connectors_JST:JST_ACH_BM02B-ACHSS_02x1.20mm_Angled" H 8450 2150 50  0001 C CNN
+F 2 "Connectors_JST:JST_SH_SM02B-SRSS-TB_02x1.00mm_Angled" H 8450 2150 50  0001 C CNN
 F 3 "" H 8450 2150 50  0001 C CNN
 	1    8450 2150
 	-1   0    0    1   
@@ -808,88 +808,88 @@ $EndComp
 $Comp
 L Conn_01x08 J5
 U 1 1 59CC2428
-P 3850 6450
-F 0 "J5" H 3850 6850 50  0000 C CNN
-F 1 "Conn_01x08" H 3850 5950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3850 6450 50  0001 C CNN
-F 3 "" H 3850 6450 50  0001 C CNN
-	1    3850 6450
+P 3350 5650
+F 0 "J5" H 3350 6050 50  0000 C CNN
+F 1 "Conn_01x08" H 3350 5150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3350 5650 50  0001 C CNN
+F 3 "" H 3350 5650 50  0001 C CNN
+	1    3350 5650
 	0    1    1    0   
 $EndComp
 $Comp
 L Conn_01x08 J4
 U 1 1 59CC25B5
-P 2600 6450
-F 0 "J4" H 2600 6850 50  0000 C CNN
-F 1 "Conn_01x08" H 2600 5950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 2600 6450 50  0001 C CNN
-F 3 "" H 2600 6450 50  0001 C CNN
-	1    2600 6450
+P 2100 5650
+F 0 "J4" H 2100 6050 50  0000 C CNN
+F 1 "Conn_01x08" H 2100 5150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 2100 5650 50  0001 C CNN
+F 3 "" H 2100 5650 50  0001 C CNN
+	1    2100 5650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2200 6250 2200 6000
+	1700 5450 1700 5200
 Wire Wire Line
-	2300 6250 2300 6000
+	1800 5450 1800 5200
 Wire Wire Line
-	2400 6250 2400 6000
+	1900 5450 1900 5200
 Wire Wire Line
-	2500 6250 2500 6000
+	2000 5450 2000 5200
 Wire Wire Line
-	2600 6250 2600 6000
+	2100 5450 2100 5200
 Wire Wire Line
-	2700 6250 2700 6000
+	2200 5450 2200 5200
 Wire Wire Line
-	2800 6250 2800 6000
+	2300 5450 2300 5200
 Wire Wire Line
-	2900 6250 2900 6000
+	2400 5450 2400 5200
 Wire Wire Line
-	3450 6250 3450 6000
+	2950 5450 2950 5200
 Wire Wire Line
-	3550 6250 3550 6000
+	3050 5450 3050 5200
 Wire Wire Line
-	3650 6250 3650 6000
+	3150 5450 3150 5200
 Wire Wire Line
-	3750 6250 3750 6000
+	3250 5450 3250 5200
 Wire Wire Line
-	3850 6250 3850 6000
+	3350 5450 3350 5200
 Wire Wire Line
-	3950 6250 3950 6000
+	3450 5450 3450 5200
 Wire Wire Line
-	4050 6250 4050 6000
+	3550 5450 3550 5200
 Wire Wire Line
-	4150 6250 4150 6000
-Text Label 2200 6000 1    60   ~ 0
+	3650 5450 3650 5200
+Text Label 1700 5200 1    60   ~ 0
 REST
-Text Label 2300 6000 1    60   ~ 0
+Text Label 1800 5200 1    60   ~ 0
 ADC
-Text Label 2400 6000 1    60   ~ 0
+Text Label 1900 5200 1    60   ~ 0
 CH_PD
-Text Label 2500 6000 1    60   ~ 0
+Text Label 2000 5200 1    60   ~ 0
 GPIO16
-Text Label 2600 6000 1    60   ~ 0
+Text Label 2100 5200 1    60   ~ 0
 GPIO14
-Text Label 2700 6000 1    60   ~ 0
+Text Label 2200 5200 1    60   ~ 0
 GPIO12
-Text Label 2800 6000 1    60   ~ 0
+Text Label 2300 5200 1    60   ~ 0
 GPIO13
-Text Label 2900 6000 1    60   ~ 0
+Text Label 2400 5200 1    60   ~ 0
 VCC
-Text Label 4150 6000 1    60   ~ 0
+Text Label 3650 5200 1    60   ~ 0
 TXD
-Text Label 4050 6000 1    60   ~ 0
+Text Label 3550 5200 1    60   ~ 0
 RXD
-Text Label 3950 6000 1    60   ~ 0
+Text Label 3450 5200 1    60   ~ 0
 GPIO5
-Text Label 3850 6000 1    60   ~ 0
+Text Label 3350 5200 1    60   ~ 0
 GPIO4
-Text Label 3750 6000 1    60   ~ 0
+Text Label 3250 5200 1    60   ~ 0
 GPIO0
-Text Label 3650 6000 1    60   ~ 0
+Text Label 3150 5200 1    60   ~ 0
 GPIO2
-Text Label 3550 6000 1    60   ~ 0
+Text Label 3050 5200 1    60   ~ 0
 GPIO15
-Text Label 3450 6000 1    60   ~ 0
+Text Label 2950 5200 1    60   ~ 0
 GND
 Wire Wire Line
 	7550 4650 7900 4650
