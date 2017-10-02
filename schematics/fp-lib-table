@@ -10,4 +10,5 @@
   (lib (name soic)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/soic.pretty")(options "")(descr ""))
   (lib (name sop)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/sop.pretty")(options "")(descr ""))
   (lib (name sot)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/sot.pretty")(options "")(descr ""))
+  (lib (name Connectors_USB)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/Connectors_USB.pretty")(options "")(descr ""))
 )
