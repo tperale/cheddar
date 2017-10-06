@@ -36,11 +36,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "Cheddar"
+Date "2017-10-06"
+Rev "2"
 Comp ""
-Comment1 ""
+Comment1 "ESP-12E based connected button."
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -104,7 +104,7 @@ P 4150 1650
 F 0 "U2" H 4150 1050 60  0000 C CNN
 F 1 "ch340g" H 4150 2000 60  0000 C CNN
 F 2 "SMD_Packages:SO-16-N" H 3950 1650 60  0001 C CNN
-F 3 "" H 3950 1650 60  0001 C CNN
+F 3 "https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF" H 3950 1650 60  0001 C CNN
 	1    4150 1650
 	1    0    0    -1  
 $EndComp
@@ -204,7 +204,7 @@ P 6950 2150
 F 0 "U3" H 6950 1900 60  0000 C CNN
 F 1 "MCP73833" H 6950 2500 60  0000 C CNN
 F 2 "sop:MSOP10" H 6950 2150 60  0001 C CNN
-F 3 "" H 6950 2150 60  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22005b.pdf" H 6950 2150 60  0001 C CNN
 	1    6950 2150
 	1    0    0    -1  
 $EndComp
@@ -333,7 +333,7 @@ P 9400 1900
 F 0 "U4" H 9400 2000 60  0000 C CNN
 F 1 "HT7333" H 9400 2100 60  0000 C CNN
 F 2 "sot:SOT89" H 9400 1900 60  0001 C CNN
-F 3 "" H 9400 1900 60  0001 C CNN
+F 3 "http://www.angeladvance.com/HT73xx.pdf" H 9400 1900 60  0001 C CNN
 	1    9400 1900
 	1    0    0    -1  
 $EndComp
@@ -790,7 +790,7 @@ P 6650 4650
 F 0 "U1" H 6650 4550 50  0000 C CNN
 F 1 "ESP-12E" H 6650 4750 50  0000 C CNN
 F 2 "ESP8266:ESP-12E_SMD" H 6650 4650 50  0001 C CNN
-F 3 "" H 6650 4650 50  0001 C CNN
+F 3 "https://www.elecrow.com/download/ESP-12F.pdf" H 6650 4650 50  0001 C CNN
 	1    6650 4650
 	1    0    0    -1  
 $EndComp
