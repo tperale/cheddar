@@ -70,6 +70,7 @@ F 0 "J1" H 8450 2300 50  0000 C CNN
 F 1 "BATT_CONN" V 8550 2150 50  0000 C TNN
 F 2 "Connectors_JST:JST_SH_SM02B-SRSS-TB_02x1.00mm_Angled" H 8450 2150 50  0001 C CNN
 F 3 "" H 8450 2150 50  0001 C CNN
+F 4 "https://www.ebay.com/itm/50-sets-Micro-JST-SH-1-0mm-2-Pin-Female-Connector-with-Wire-and-Male-Connector/172166255853?hash=item2815e894ed:g:rGcAAOSwaZdXHwHf" H 8450 2150 60  0001 C CNN "Link"
 	1    8450 2150
 	-1   0    0    1   
 $EndComp
@@ -83,6 +84,7 @@ F 0 "J2" H 4950 3900 50  0000 C CNN
 F 1 "EXTERNAL_TRIGGER" V 5050 3750 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm_SMD_Pin1Left" H 4950 3750 50  0001 C CNN
 F 3 "" H 4950 3750 50  0001 C CNN
+F 4 "https://www.ebay.com/itm/10pcs-2-54MM-1-40Pin-SMD-SMT-1-40Pin-Male-Single-Row-Pin-Header/261879748701?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649" H 4950 3750 60  0001 C CNN "Link"
 	1    4950 3750
 	0    -1   -1   0   
 $EndComp
@@ -94,6 +96,7 @@ F 0 "J3" H 1100 2400 50  0000 L CNN
 F 1 "USB_OTG" H 1100 2300 50  0000 L CNN
 F 2 "Connectors_USB:USB_Micro-B_Molex_47346-0001" H 1450 1900 50  0001 C CNN
 F 3 "" H 1450 1900 50  0001 C CNN
+F 4 "https://www.ebay.com/itm/20pcs-Micro-USB-Type-B-Female-Socket-5-Pin-Connector-SMD-Soldering-BB/311979527669?epid=2265640141&hash=item48a36dcdf5:g:63EAAOSwB3tZpAxU" H 1300 1950 60  0001 C CNN "Link"
 	1    1300 1950
 	1    0    0    -1  
 $EndComp
@@ -818,6 +821,7 @@ F 0 "J5" H 3350 6050 50  0000 C CNN
 F 1 "Conn_01x08" H 3350 5150 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3350 5650 50  0001 C CNN
 F 3 "" H 3350 5650 50  0001 C CNN
+F 4 "https://www.ebay.com/itm/10pcs-2-54MM-1-40Pin-SMD-SMT-1-40Pin-Male-Single-Row-Pin-Header/261879748701?hash=item3cf93fd85d:g:XAAAAOSwPhdVSx-I" H 3350 5650 60  0001 C CNN "Link"
 	1    3350 5650
 	0    1    1    0   
 $EndComp
@@ -829,6 +833,7 @@ F 0 "J4" H 2100 6050 50  0000 C CNN
 F 1 "Conn_01x08" H 2100 5150 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 2100 5650 50  0001 C CNN
 F 3 "" H 2100 5650 50  0001 C CNN
+F 4 "https://www.ebay.com/itm/10pcs-2-54MM-1-40Pin-SMD-SMT-1-40Pin-Male-Single-Row-Pin-Header/261879748701?hash=item3cf93fd85d:g:XAAAAOSwPhdVSx-I" H 2100 5650 60  0001 C CNN "Link"
 	1    2100 5650
 	0    1    1    0   
 $EndComp
