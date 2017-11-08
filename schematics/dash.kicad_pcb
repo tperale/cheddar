@@ -1077,12 +1077,12 @@
     )
   )
 
-  (module Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm (layer F.Cu) (tedit 59650532) (tstamp 59CC2223)
+  (module Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm (layer F.Cu) (tedit 5A032196) (tstamp 59CC2223)
     (at 152.527 98.425 90)
     (descr "Through hole straight pin header, 1x08, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x08 2.54mm single row")
     (path /59CC25B5)
-    (fp_text reference J4 (at 0 -2.33 90) (layer F.SilkS)
+    (fp_text reference J4 (at 0 -2.33 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Conn_01x08 (at 0 20.11 90) (layer F.Fab)
@@ -1129,12 +1129,12 @@
     )
   )
 
-  (module Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm (layer F.Cu) (tedit 59650532) (tstamp 59CC222F)
+  (module Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm (layer F.Cu) (tedit 5A03218F) (tstamp 59CC222F)
     (at 170.307 121.539 270)
     (descr "Through hole straight pin header, 1x08, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x08 2.54mm single row")
     (path /59CC2428)
-    (fp_text reference J5 (at 0 -2.33 270) (layer F.SilkS)
+    (fp_text reference J5 (at 0 -2.33 270) (layer Cmts.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Conn_01x08 (at 0 20.11 270) (layer F.Fab)
@@ -1235,13 +1235,13 @@
     (pad "" smd rect (at 1.8 -1.9375 270) (size 1.2 1.8) (layers B.Cu B.Paste B.Mask))
   )
 
-  (module Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm_SMD_Pin1Left (layer F.Cu) (tedit 59650532) (tstamp 59CE47CE)
+  (module Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm_SMD_Pin1Left (layer F.Cu) (tedit 5A0321A1) (tstamp 59CE47CE)
     (at 147.066 118.237 270)
     (descr "surface-mounted straight pin header, 1x02, 2.54mm pitch, single row, style 1 (pin 1 left)")
     (tags "Surface mounted pin header SMD 1x02 2.54mm single row style1 pin1 left")
     (path /59610601)
     (attr smd)
-    (fp_text reference J2 (at 0 -3.6 270) (layer F.SilkS)
+    (fp_text reference J2 (at 0 -3.6 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value EXTERNAL_TRIGGER (at 0 3.6 270) (layer F.Fab)
