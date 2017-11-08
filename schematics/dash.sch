@@ -59,6 +59,7 @@ F 0 "SW1" V 5000 4450 50  0000 L CNN
 F 1 "SW_Push" H 4950 4290 50  0000 C CNN
 F 2 "Buttons_Switches_SMD:SW_DIP_x1_W5.08mm_Slide_Copal_CHS-A" H 4950 4550 50  0001 C CNN
 F 3 "" H 4950 4550 50  0001 C CNN
+F 4 "https://www.ebay.com/itm/100pcs-3-6-2-5mm-Tactile-Push-Button-Switch-Tact-Switch-Micro-Switch-2-Pin-SMD/400985332185?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649" V 4950 4350 60  0001 C CNN "Link"
 	1    4950 4350
 	1    0    0    -1  
 $EndComp
