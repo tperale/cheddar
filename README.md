@@ -46,7 +46,7 @@ Why not use an ESP8266 microcontroller for this purpose, it's used in a wide
 variety of projects, many framework are developped for it and is also really
 cheap.
 
-Power an ESP8266 dev board with battery and wake it up when the button is 
+Power an ESP8266 dev board with battery and wake it up when the button is
 triggered is a quite trivial problem. That's why I choosed to create a PCB to
 host the ESP8266 module. Although it has some requirements:
 
@@ -73,16 +73,16 @@ host the ESP8266 module. Although it has some requirements:
 
 ### Semiconductors
 
-Ref | Qty | Value | Fottprint
+Ref | Qty | Value | Footprint
 ----|-----|-------|---------------
 U2 | 1 | ch340g | SMD_Packages:SO-16-N
 U3 | 1 | MCP73833 | sop:MSOP10
 U4 | 1 | HT7333 | sot:SOT89
 U1 | 1 | ESP-12E | ESP8266:ESP-12E_SMD
 
-### Capacitors 
+### Capacitors
 
-Ref | Qty | Value | Fottprint
+Ref | Qty | Value | Footprint
 ----|-----|-------|---------------
 C2, C3 | 2 | 22pF | Capacitors_SMD:C_1206_HandSoldering
 C4, C8 | 2 | 100nF | Capacitors_SMD:C_1206_HandSoldering
@@ -93,7 +93,7 @@ C9, C1 | 2 | 220uF | Capacitors_SMD:C_1206_HandSoldering
 
 ### Resistors
 
-Ref | Qty | Value | Fottprint
+Ref | Qty | Value | Footprint
 ----|-----|-------|---------------
 R1, R2, R4 | 3 | 470R | Resistors_SMD:R_1206_HandSoldering
 R3 | 1 | 1kR | Resistors_SMD:R_1206_HandSoldering
@@ -101,13 +101,13 @@ R5, R6, R7, R8 | 4 | 10kR |Resistors_SMD:R_1206_HandSoldering
 
 ### Crystals
 
-Ref | Qty | Value | Fottprint
+Ref | Qty | Value | Footprint
 ----|-----|-------|---------------
 Y1 | 1 | 12Mhz | Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm_HandSoldering
 
 ### Diodes
 
-Ref | Qty | Value | Fottprint
+Ref | Qty | Value | Footprint
 ----|-----|-------|---------------
 D2 | 1 | ORANGE | LEDs:LED_1206
 D1 | 1 | GREEN | LEDs:LED_1206
@@ -115,7 +115,7 @@ D3 | 1 | RED | LEDs:LED_1206
 
 ### Connectors
 
-Ref | Qty | Fottprint
+Ref | Qty | Footprint
 ----|-----|---------------
 J1 | 1 | Connectors_JST:JST_SH_SM02B-SRSS-TB_02x1.00mm_Angled
 J2 | 1 | Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm_SMD_Pin1Left
@@ -124,6 +124,6 @@ J5 J4 | 2 | Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm
 
 ### Switch
 
-Ref | Qty | Fottprint
+Ref | Qty | Footprint
 ----|-----|---------------
 SW1 | 1 | Buttons_Switches_SMD:SW_DIP_x1_W5.08mm_Slide_Copal_CHS-A
