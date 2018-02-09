@@ -147,7 +147,6 @@ F 4 "https://www.ebay.com/itm/5pcs-Original-CH340G-IC-R3-Board-Free-USB-Cable-Se
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1600 2150
-NoConn ~ 1200 2350
 Text Label 7900 4350 2    60   ~ 0
 TXD
 Text Label 7900 4450 2    60   ~ 0
@@ -2536,4 +2535,9 @@ Text Label 3400 2050 0    60   ~ 0
 XI
 Text Label 3700 2350 0    60   ~ 0
 XO
+Wire Wire Line
+	1200 2350 1200 2400
+Wire Wire Line
+	1200 2400 1300 2400
+Connection ~ 1300 2400
 $EndSCHEMATC
