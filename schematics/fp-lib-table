@@ -31,4 +31,5 @@
   (lib (name Silicon-Custom)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/Silicon-Custom.pretty")(options "")(descr ""))
   (lib (name Silicon-Standard)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/Silicon-Standard.pretty")(options "")(descr ""))
   (lib (name Switches)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/Switches.pretty")(options "")(descr ""))
+  (lib (name custom-cheddar)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints/custom-cheddar.pretty")(options "")(descr ""))
 )

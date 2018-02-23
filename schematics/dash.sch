@@ -128,7 +128,7 @@ U 1 1 59611B73
 P 1300 1950
 F 0 "J3" H 1100 2400 50  0000 L CNN
 F 1 "USB_OTG" H 1100 2300 50  0000 L CNN
-F 2 "Connect:USB_Micro-B" H 1450 1900 50  0001 C CNN
+F 2 "custom-cheddar:USB_Micro-B-custom" H 1450 1900 50  0001 C CNN
 F 3 "" H 1450 1900 50  0001 C CNN
 F 4 "https://www.ebay.com/itm/20pcs-Micro-USB-Type-B-Female-Socket-5-Pin-Connector-SMD-Soldering-BB/311979527669?epid=2265640141&hash=item48a36dcdf5:g:63EAAOSwB3tZpAxU" H 1300 1950 60  0001 C CNN "Link"
 	1    1300 1950
@@ -2540,4 +2540,16 @@ Wire Wire Line
 Wire Wire Line
 	1200 2400 1300 2400
 Connection ~ 1300 2400
+$Comp
+L SFE_LOGO_FLAME.1_INCH URLAB-LOGO1
+U 1 1 5A900242
+P 1300 7250
+F 0 "URLAB-LOGO1" H 1450 7850 45  0000 C CNN
+F 1 "logo" H 1300 7200 45  0001 C CNN
+F 2 "custom-cheddar:urlab" H 1300 7850 20  0001 C CNN
+F 3 "" H 1300 7250 60  0001 C CNN
+F 4 "XXX-00000" H 1300 7900 60  0001 C CNN "Field4"
+	1    1300 7250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
