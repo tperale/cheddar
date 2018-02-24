@@ -84,7 +84,7 @@ Ref | Qty | Value | Footprint
 ----|-----|-------|---------------
 R1 | 1 | 470R | 1206
 R3, R5, R6, R7, R8 | 5 | 10kR | 1206
-R9 | 1 | 100kR
+R9 | 1 | 100kR | 1206
 
 ### Crystals
 
@@ -97,7 +97,7 @@ Y1 | 1 | 12Mhz | Crystal_SMD_3225-4pin_3.2x2.5mm_HandSoldering
 Ref | Qty | Value | Footprint
 ----|-----|-------|---------------
 D1 | 1 | GREEN | 1206
-D4 | 1 | Schottky | SOT23
+D4 | 1 | Schottky | SOD-523
 
 ### Connectors
 
