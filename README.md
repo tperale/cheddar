@@ -14,34 +14,34 @@
 
 ## What is this ?
 
-Amazon created not a long time ago a connected button (called dash button) that allow you to make order on amazon just by pressing a single button facilitating the process of buying of household objects.
-It took not a long time for hackers to appropriate the object and use it for other purposes:
+Amazon created not a long time ago a connected button (called Dash button) that allows to make an order on Amazon just by pressing a single button facilitating the process of buying of household goods.
+It didn't take a long time before hackers started appropriating the object and use it for their own purposes:
 
   * [Hacking Amazon’s $5 Dash Button to order Domino’s Pizza](https://medium.com/@brody_berson/hacking-amazon-s-5-dash-button-to-order-domino-s-pizza-9d19c9d04646)
   * [How To Use the Amazon Dash with IFTTT and Home Assistant](https://www.youtube.com/watch?v=qZpJ9W0wCks)
 
-All you needed was to buy one, get the button ID through the Amazon app and encode that ID to _whatever_ listen to incoming query.
-Amazon delivered you a 5$ connected piece of hardware, battery and case included that allow you to virtually do anything with.
+All that had to be done was to buy one, get the button ID through the Amazon app and encode that ID to _whatever_ was listening to the incoming query.
+Amazon gave you a $5 connected piece of hardware, battery and case included that allowed you to do virtually anything with it.
 
-This is amazing but the problem of those buttons are:
+As amazing as this might sound, the problems of those buttons are:
 
-  * You need an amazon premium account to purchase and get the button ID.
-  * You can't directly program on it, which make complex query more difficult to run and embedding sensors impossible.
+  * You need an amazon premium account to purchase them and get the button ID.
+  * You can't directly program them, which makes complex queries more difficult to run and embedding sensors impossible.
   * You need a server running somewhere locally to listen to the incoming queries.
-  * You can't wake it up from other input than pressing the button.
+  * You can't wake it up from external events other than by pressing the button.
 
 ## What to do ?
 
-Why not create our own open source "Amazon Dash button". It has to also run on battery, can be programmable and is internet connected.
+Why not create our own open source "Amazon Dash button". It would also run on a battery, can be programmed and is Internet-connected.
 
-Why not use an ESP8266 microcontroller for this purpose, it's used in a wide variety of projects, many framework are developped for it and is also really cheap.
+Why not use an ESP8266 microcontroller for this purpose, it's used in a wide variety of projects, many frameworks are developed around it and it's also really cheap.
 
-Power an ESP8266 dev board with battery and wake it up when the button is triggered is a quite trivial problem and not fun. That's why I choosed to create a PCB to host the ESP8266 module. Although it has some requirements:
+Powering an ESP8266 dev board (WEMOS D1, NodeMCU DevKit, Sparkfun ESP8266 Thing...) with a battery and waking it up when the button is pressed is quite a trivial problem and not fun. That's why I chose to create a PCB to host the ESP8266 module. Although it has some requirements:
 
   * Be able to program it and debug it from USB
   * Can run on batteries
-  * Can charge batteries from it by USB
-  * Be power efficient
+  * Batteries should be rechargeable using the on board USB
+  * It should be power efficient
 
 ## Datasheets
 
