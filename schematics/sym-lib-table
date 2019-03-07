@@ -1,3 +1,2 @@
 (sym_lib_table
-  (lib (name dash-rescue)(type Legacy)(uri ${KIPRJMOD}/dash-rescue.lib)(options "")(descr ""))
 )
