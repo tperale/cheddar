@@ -1,0 +1,115 @@
+* Cheddar
+
+*Cheddar* is a connected button based on the ESP8266.
+
+** What is this ?
+
+   Amazon created not a long time ago a connected button (called Dash
+   button) that allows to make an order on Amazon just by pressing a
+   single button facilitating the process of buying of household goods.
+   It didn't take a long time before hackers started appropriating the
+   object and use it for their own purposes:
+
+   * [[https://medium.com/@brody_berson/hacking-amazon-s-5-dash-button-to-order-domino-s-pizza-9d19c9d04646][Hacking Amazon’s $5 Dash Button to order Domino’s Pizza]]
+   * [[https://www.youtube.com/watch?v=qZpJ9W0wCks][How To Use the Amazon Dash with IFTTT and Home Assistant]]
+
+   All that had to be done was to buy one, get the button ID through the
+   Amazon app and encode that ID to _whatever_ was listening to the
+   incoming query.  Amazon gave you a $5 connected piece of hardware,
+   battery and case included that allowed you to do virtually anything
+   with it.
+
+   As amazing as this might sound, the problems of those buttons are:
+
+   * You need an amazon premium account to purchase them and get the button ID.
+   * You can't directly program them, which makes complex queries more
+     difficult to run and embedding sensors impossible.
+   * You need a server running somewhere locally to listen to the incoming queries.
+   * You can't wake it up from external events other than by pressing the button.
+
+** What to do ?
+
+   Why not create our own open source "Amazon Dash button". It would
+   also run on a battery, can be programmed and is
+   Internet-connected. The ESP8266 microcontroller is used in a wide
+   variety of projects and many frameworks are developed around + it's
+   also really cheap !
+
+   Powering an ESP8266 dev board (WEMOS D1, NodeMCU DevKit, Sparkfun
+   ESP8266 Thing...) with a battery and waking it up when the button is
+   pressed is quite a trivial problem and not fun. That's why I chose to
+   create a PCB to host the ESP8266 module. Although it has some
+   requirements:
+
+   * Be able to program it and debug it from USB
+   * Can run on batteries
+   * Batteries should be rechargeable using the on board USB
+   * It should be power efficient
+
+   # TODO: add up to date schematic and .brd pictures
+
+** BOM
+
+*** Semiconductors
+
+    | Ref | Qty | What                 | Value     | Footprint   |
+    |-----+-----+----------------------+-----------+-------------|
+    | Q1  |   1 | P-MOSFET             | DMG3415U  | SOT23-3     |
+    | U1  |   1 | USB-Serial converter | CH340G    | SO-16-N     |
+    | U2  |   1 | Battery charger      | MCP73831  | SOT23-5     |
+    | U3  |   1 | uC + wireless module | ESP-12E   | ESP-12E_SMD |
+    | U4  |   1 | Voltage regulator    | HT7333    | SOT89       |
+    | D1  |   1 | Battery 100% LED     |           | 1206        |
+    | D2  |   1 | Schottky diode       | 1PS79SB31 | SOD-523     |
+
+
+*** Capacitors
+
+    | Ref    | Qty | Value | Footprint |
+    |--------+-----+-------+-----------|
+    | C1, C9 |   2 | 220uF |      1206 |
+    | C2, C3 |   2 | 22pF  |      1206 |
+    | C4, C8 |   2 | 100nF |      1206 |
+    | C5     |   1 | 10nF  |      1206 |
+    | C6     |   1 | 22nF  |      1206 |
+    | C7     |   1 | 1uF   |      1206 |
+
+*** Resistors
+
+    | Ref                | Qty | Value | Footprint |
+    |--------------------+-----+-------+-----------|
+    | R1                 |   1 | 470R  |      1206 |
+    | R3, R5, R6, R7, R8 |   5 | 10kR  |      1206 |
+    | R9                 |   1 | 100kR |      1206 |
+
+*** Crystals
+
+    | Ref | Qty | Value | Footprint                       |
+    |-----+-----+-------+---------------------------------|
+    | Y1  |   1 | 12Mhz | Crystal_SMD_3225-4pin_3.2x2.5mm |
+
+*** Connectors
+
+    | Ref    | Qty | Footprint                             |
+    |--------+-----+---------------------------------------|
+    | J1     |   1 | USB_Micro-B_Molex                     |
+    | J2, J3 |   2 | Pin_Header_Straight_1x08_Pitch2.54mm  |
+    | J4     |   1 | Pin_Header_Straight_1x02_Pitch2.54mm  |
+    | J5     |   1 | JST_SH_SM02B-SRSS-TB_02x1.00mm_Angled |
+
+
+*** Switch
+
+    | Ref | Qty | Footprint         |
+    |-----+-----+-------------------|
+    | SW1 |   1 | SW_DIP_x1_W5.08mm |
+
+*** References
+
+    * [[https://www.youtube.com/watch?v=nbMfb0dIvYc&t=307s][Long lasting DIY "Amazon Dash Button" using an ESP8266]]
+    * [[https://www.youtube.com/watch?v=6JD2RMDM88Y][Cheap IFTTT Button with spare ESP-01 finished]]
+    * [[https://www.youtube.com/watch?v=wf_msvWv1jk][How to properly power the ESP8266 modules]]
+    * [[https://github.com/espressif/esptool/wiki/ESP8266-Boot-Mode-Selection][ESP8266 Wiki - Boot Mode Selection]]
+    * [[https://github.com/knewron-technologies/1btn][1btn]]
+    * [[https://www.kickstarter.com/projects/805606890/gobutton-simple-wi-fi-connected-smart-button-for-e/description][goButton]]
+    * [[https://github.com/DeqingSun/ESP8266-Dash-Button][ESP8266-Dash-Button]]
